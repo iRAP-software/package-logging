@@ -22,7 +22,7 @@ class MinLevelLogger extends LoggerAbstract
     
     public function log($level, $message, array $context = array())
     {
-        if ($level > $this->m_threshold)
+        if ($level > $this->m_threshold->get_level())
         {
             $this->m_sub_logger->log($level, $message, $context);
         }
