@@ -4,7 +4,7 @@
     "description": "Cli Menu code for writing CLI applications in PHP 5.3+",
     "keywords": ["core","library"],
     "homepage": "http://irap.org/",
-    "license": "none",
+    "license": "MIT",
     "authors": [
         {
             "name": "Stuart Page",
