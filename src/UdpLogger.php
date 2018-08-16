@@ -60,7 +60,7 @@ class UdpLogger extends LoggerAbstract
             
             if ($bytesSent === FALSE)
             {
-                throw new Exception("Failed to send UDP log.");
+                throw new \Exception("Failed to send UDP log.");
             }
         }
         else 
