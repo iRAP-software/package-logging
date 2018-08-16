@@ -62,9 +62,7 @@ class UdpLogger extends LoggerAbstract
             {
                 throw new Exception("Failed to send UDP log.");
             }
-            
-            print $bytesSent . PHP_EOL;
-        } 
+        }
         else 
         {
             throw new \Exception("Can't create socket.");
