@@ -16,7 +16,7 @@
     "require": {
         "php": ">=7.0.0",
         "irap/core-libs": "1.1.*",
-        "irap/emailers": "dev-aa-master",
+        "irap/emailers": "dev-aa-upgrade",
         "irap/twilio": "1.0.*"
     },
     "require-dev": {
