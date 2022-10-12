@@ -21,6 +21,7 @@ class DatabaseLogger extends LoggerAbstract
     protected $m_connection;
     protected $m_logTable;
     protected $m_minLogLevel = 0;
+    protected $m_source = null;
     
     
     /**
@@ -35,6 +36,16 @@ class DatabaseLogger extends LoggerAbstract
         $this->m_logTable = $logTable;
     }
     
+    /**
+     * Method to update the source parameter.
+     * Having this method and not having the argument passed to __construct
+     * means that existing usages of this class will not be interrupted.
+     * @param string $source [description]
+     */
+    public function set_source(string $source): void
+    {
+        $this->m_source = $source;
+    }
         
     /**
      * Logs with an arbitrary level.
@@ -57,6 +68,15 @@ class DatabaseLogger extends LoggerAbstract
                 'priority' => $level,
                 'context'  => $json_context_string
             );
+
+            // if, and only if, the source param has been set 
+            // (ie is not the default value of null)
+            // will it be added to the insert query.
+            // This means that if the project is using a logs table that
+            // does not have the source column then the query will not fail.
+            if($this->m_source !== null) {
+                $params['source'] = $this->m_source;
+            }
             
             $query = "INSERT INTO `" . $this->m_logTable . "` SET " . 
                     \iRAP\CoreLibs\MysqliLib::generateQueryPairs($params, $mysqli_conn);
