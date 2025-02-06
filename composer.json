@@ -14,8 +14,8 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0",
-        "irap/core-libs": "1.1.*",
+        "php": ">=8.0",
+        "irap/core-libs": "1.2.*",
         "irap/emailers": "2.0.*",
         "irap/twilio": "1.0.*"
     },
