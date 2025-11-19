@@ -1,30 +1,27 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4979215c793f1862045d853bc0af00d6",
+    "content-hash": "6311341af7d412c4980d24f108408940",
     "packages": [
         {
             "name": "irap/core-libs",
-            "version": "1.1.44",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/iRAP-software/package-core-libs.git",
-                "reference": "831b49cb244f865f99307c820a4207e95089cda8"
+                "reference": "e21b2e7924040fa7d9a2c128cce00da7fd0ed44b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/iRAP-software/package-core-libs/zipball/831b49cb244f865f99307c820a4207e95089cda8",
-                "reference": "831b49cb244f865f99307c820a4207e95089cda8",
+                "url": "https://api.github.com/repos/iRAP-software/package-core-libs/zipball/e21b2e7924040fa7d9a2c128cce00da7fd0ed44b",
+                "reference": "e21b2e7924040fa7d9a2c128cce00da7fd0ed44b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0"
-            },
-            "require-dev": {
-                "irap/autoloader": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -50,25 +47,28 @@
                 "core",
                 "library"
             ],
-            "time": "2018-08-09T10:47:03+00:00"
+            "support": {
+                "source": "https://github.com/iRAP-software/package-core-libs/tree/1.3.0"
+            },
+            "time": "2025-03-05T11:41:58+00:00"
         },
         {
             "name": "irap/emailers",
-            "version": "1.3.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/iRAP-software/package-emailers.git",
-                "reference": "a4c7a18823b6c45e2adb329e51411b56a6a00cd8"
+                "reference": "f11864718a18bb5fe6683c5be034278532f8be09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/iRAP-software/package-emailers/zipball/a4c7a18823b6c45e2adb329e51411b56a6a00cd8",
-                "reference": "a4c7a18823b6c45e2adb329e51411b56a6a00cd8",
+                "url": "https://api.github.com/repos/iRAP-software/package-emailers/zipball/f11864718a18bb5fe6683c5be034278532f8be09",
+                "reference": "f11864718a18bb5fe6683c5be034278532f8be09",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
-                "phpmailer/phpmailer": "5.2.*"
+                "phpmailer/phpmailer": "7.*"
             },
             "type": "library",
             "autoload": {
@@ -94,7 +94,10 @@
                 "core",
                 "library"
             ],
-            "time": "2017-04-09T17:45:03+00:00"
+            "support": {
+                "source": "https://github.com/iRAP-software/package-emailers/tree/2.1.0"
+            },
+            "time": "2025-11-19T09:14:03+00:00"
         },
         {
             "name": "irap/twilio",
@@ -139,73 +142,71 @@
                 "sms",
                 "twilio"
             ],
+            "support": {
+                "source": "https://github.com/iRAP-software/package-twilio/tree/master"
+            },
             "time": "2015-10-28T14:43:51+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v5.2.26",
+            "version": "v7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "70362997bda4376378be7d92d81e2200550923f7"
+                "reference": "c7111310c6116ba508a6a170a89eaaed2129bd42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/70362997bda4376378be7d92d81e2200550923f7",
-                "reference": "70362997bda4376378be7d92d81e2200550923f7",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c7111310c6116ba508a6a170a89eaaed2129bd42",
+                "reference": "c7111310c6116ba508a6a170a89eaaed2129bd42",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
-                "php": ">=5.0.0"
+                "ext-filter": "*",
+                "ext-hash": "*",
+                "php": ">=5.5.0"
             },
             "require-dev": {
-                "doctrine/annotations": "1.2.*",
-                "jms/serializer": "0.16.*",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "4.8.*",
-                "symfony/debug": "2.8.*",
-                "symfony/filesystem": "2.8.*",
-                "symfony/translation": "2.8.*",
-                "symfony/yaml": "2.8.*",
-                "zendframework/zend-cache": "2.5.1",
-                "zendframework/zend-config": "2.5.1",
-                "zendframework/zend-eventmanager": "2.5.1",
-                "zendframework/zend-filter": "2.5.1",
-                "zendframework/zend-i18n": "2.5.1",
-                "zendframework/zend-json": "2.5.1",
-                "zendframework/zend-math": "2.5.1",
-                "zendframework/zend-serializer": "2.5.*",
-                "zendframework/zend-servicemanager": "2.5.*",
-                "zendframework/zend-stdlib": "2.5.1"
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+                "doctrine/annotations": "^1.2.6 || ^1.13.3",
+                "php-parallel-lint/php-console-highlighter": "^1.0.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3.2",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.7.2",
+                "yoast/phpunit-polyfills": "^1.0.4"
             },
             "suggest": {
-                "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
+                "decomplexity/SendOauth2": "Adapter for using XOAUTH2 authentication",
+                "ext-imap": "Needed to support advanced email address parsing according to RFC822",
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
+                "ext-openssl": "Needed for secure SMTP sending and DKIM signing",
+                "greew/oauth2-azure-provider": "Needed for Microsoft Azure XOAUTH2 authentication",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)",
+                "thenetworg/oauth2-azure": "Needed for Microsoft XOAUTH2 authentication"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "class.phpmailer.php",
-                    "class.phpmaileroauth.php",
-                    "class.phpmaileroauthgoogle.php",
-                    "class.smtp.php",
-                    "class.pop3.php",
-                    "extras/EasyPeasyICS.php",
-                    "extras/ntlm_sasl_client.php"
-                ]
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-2.1"
+                "LGPL-2.1-only"
             ],
             "authors": [
                 {
-                    "name": "Jim Jagielski",
-                    "email": "jimjag@gmail.com"
-                },
-                {
                     "name": "Marcus Bointon",
                     "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
                 },
                 {
                     "name": "Andy Prevost",
@@ -216,7 +217,17 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2017-11-04T09:26:05+00:00"
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v7.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Synchro",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-15T16:40:02+00:00"
         }
     ],
     "packages-dev": [
@@ -258,16 +269,21 @@
             "keywords": [
                 "autoloader"
             ],
+            "support": {
+                "issues": "https://github.com/iRAP-software/package-autoloader/issues",
+                "source": "https://github.com/iRAP-software/package-autoloader/tree/master"
+            },
             "time": "2017-05-25T13:18:47+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.0.0"
     },
-    "platform-dev": []
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
